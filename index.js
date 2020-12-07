@@ -1,6 +1,6 @@
 const inquirer = require("./assets/node_modules/inquirer");
 const fs = require("fs");
-const util = require("./assets/utils/generateMarkdown");
+const generateMarkdown = require("./assets/utils/generateMarkdown");
 
 // array of questions for user
 const questions = () =>
