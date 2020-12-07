@@ -1,6 +1,8 @@
 const inquirer = require("./assets/node_modules/inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./assets/utils/generateMarkdown");
+const util = require("util");
+const writeToFile = util.promisify(fs.writeFile);
 
 // array of questions for user
 const questions = () =>
@@ -11,22 +13,22 @@ const questions = () =>
       message: "What is the application name?",
     },
     {
-      type: "input",
+      type: "editor",
       name: "comment",
       message: "Developer Comment?",
     },
     {
-      type: "input",
+      type: "editor",
       name: "developer",
       message: "Developer Request?",
     },
     {
-      type: "input",
+      type: "editor",
       name: "story",
       message: "User Story?",
     },
     {
-      type: "input",
+      type: "editor",
       name: "criteria",
       message: "Acceptance Criteria?",
     },
@@ -36,7 +38,7 @@ const questions = () =>
       message: "Any Mockup?",
     },
     {
-      type: "input",
+      type: "editor",
       name: "features",
       message: "Features and Highlights?",
     },
@@ -46,7 +48,7 @@ const questions = () =>
       message: "Video Link?",
     },
     {
-      type: "input",
+      type: "editor",
       name: "install",
       message: "Installation and Git Repo?",
     },
@@ -62,11 +64,14 @@ const questions = () =>
     },
   ]);
 // function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 // function to initialize program
 function init() {
-  questions();
+  questions()
+    .then((data) => writeToFile("readme.md", generateMarkdown(data)))
+    .then(() => console.log("Successfully wrote to readme"))
+    .catch((err) => console.error(err));
 }
 
 // function call to initialize program
