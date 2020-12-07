@@ -62,6 +62,7 @@ ${data.install}
 
 ## License Agreement
 
+${data.license}
 `;
 }
 
