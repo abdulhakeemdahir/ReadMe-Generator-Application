@@ -44,12 +44,17 @@ const questions = () =>
     },
     {
       type: "input",
-      name: "live",
+      name: "video",
       message: "Video Link?",
     },
     {
+      type: "input",
+      name: "img",
+      message: "Image Link?",
+    },
+    {
       type: "editor",
-      name: "install",
+      name: "repo",
       message: "Installation and Git Repo?",
     },
     {
