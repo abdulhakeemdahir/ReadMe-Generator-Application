@@ -60,6 +60,7 @@ Please follow the installation process below:
 
 ${data.install}
 
+## License Agreement
 
 `;
 }
