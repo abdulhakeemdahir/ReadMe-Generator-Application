@@ -19,7 +19,7 @@ const questions = () =>
     },
     {
       type: "editor",
-      name: "developer",
+      name: "request",
       message: "Developer Request?",
     },
     {
