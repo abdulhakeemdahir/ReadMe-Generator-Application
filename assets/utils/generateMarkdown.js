@@ -6,23 +6,16 @@ function generateMarkdown(data) {
 
 UW Code Bootcamp Week 9 HW
 
+## Description
+
+${data.description}
+
 ## Table of Contents
 
-- [Developer Comment](#developer-comment)
-- [Employer Request](#employer-request)
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
-- [Mockup](#mockup)
-- [Website Features and Highlights](#website-features-and-highlights)
-- [Live Project Site](#live-project-site)
-- [Installation and Git Repository](#installation-and-git-repository)
-- [Credits](#credits)
+${data.tableofcontents}
 
-## Developer Comment
 
-${data.comment}
-
-## Employer Request
+## Installation
 \`\`\`
 ${data.request}
 \`\`\`
