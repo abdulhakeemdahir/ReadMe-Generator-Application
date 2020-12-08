@@ -28,7 +28,7 @@ Hello everyone, and welcome back to my Repo! My name is Abdulhakeem Dahir and I 
 Please follow the installation process below:
 
 ```
-1. Fork the repository from the link above
+1. Fork the repository from the link below
 2. Clone the repo to your computer via git
 3. Open the project files with the text editor of your choice.
 
