@@ -43,7 +43,7 @@ ${data.contribute}
 ## Tests
 Below is video test of my working application
 
-[![image](../img/hw9.png)](${data.video})
+[![image](assets/img/hw9.png)](${data.video})
 
 
 ## Questions
