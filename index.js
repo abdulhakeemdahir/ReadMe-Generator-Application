@@ -1,3 +1,4 @@
+// All required modules
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./assets/utils/generateMarkdown");
@@ -9,10 +10,9 @@ const writeToFile = util.promisify(fs.writeFile);
 const questions = () =>
   inquirer.prompt([
     {
-      type: "list",
+      type: "input",
       name: "title",
       message: "What is the application name?",
-      choices: ["Choice A", new inquirer.Separator(), "choice B"],
     },
     {
       type: "editor",
@@ -40,9 +40,16 @@ const questions = () =>
       message: "How to use your Program?",
     },
     {
-      type: "input",
+      type: "list",
       name: "license",
       message: "What is your programs License?",
+      choices: [
+        "GNU",
+        new inquirer.Separator(),
+        "MIT",
+        new inquirer.Separator(),
+        "Apache",
+      ],
     },
     {
       type: "editor",
@@ -65,12 +72,11 @@ const questions = () =>
       message: "What is your email?",
     },
   ]);
-// function to write README file
-// function writeToFile(fileName, data) {}
 
 // function to initialize program
 function init() {
   questions()
+    // function to write README file
     .then((data) => writeToFile("readme.md", generateMarkdown(data)))
     .then(() => console.log("Successfully wrote to readme"))
     .catch((err) => console.error(err));
