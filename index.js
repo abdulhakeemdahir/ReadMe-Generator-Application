@@ -45,29 +45,24 @@ const questions = () =>
       message: "What is your programs License?",
     },
     {
+      type: "editor",
+      name: "contribute",
+      message: "How you can contribute?",
+    },
+    {
       type: "input",
       name: "video",
       message: "Video Link?",
     },
     {
       type: "input",
-      name: "img",
-      message: "Image Link?",
-    },
-    {
-      type: "editor",
-      name: "repo",
-      message: "Installation and Git Repo?",
+      name: "username",
+      message: "What is your Github Username?",
     },
     {
       type: "input",
-      name: "contributors",
-      message: "Any Contributors?",
-    },
-    {
-      type: "input",
-      name: "license",
-      message: "What's the license?",
+      name: "email",
+      message: "What is your email?",
     },
   ]);
 // function to write README file
