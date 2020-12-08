@@ -50,7 +50,7 @@ Below is video test of my working application
 
 If you have any additional questions, you can reach me at:
 
-Github Profile: github.com/${data.username}
+Github Profile: wwww.github.com/${data.username}
 
 E-mail: ${data.email}
 
