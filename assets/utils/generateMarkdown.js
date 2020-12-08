@@ -22,9 +22,11 @@ ${data.tableofcontents}
 
 Please follow the installation process below:
 
+\`\`\`
 ${data.install}
-
-Respository: ${data.repo}
+\`\`\`
+Respository: 
+${data.repo}
 
 
 ## Usage
@@ -41,16 +43,16 @@ ${data.contribute}
 ## Tests
 Below is video test of my working application
 
-![Video](${data.video})
+[![image](../img/hw9.png)](${data.video})
 
 
 ## Questions
 
 If you have any additional questions, you can reach me at:
 
-github.com/${data.username}
+Github Profile: github.com/${data.username}
 
-${data.email}
+E-mail: ${data.email}
 
 `;
 }
