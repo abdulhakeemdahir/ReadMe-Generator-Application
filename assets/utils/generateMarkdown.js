@@ -2,6 +2,8 @@
 function generateMarkdown(data) {
   return `
 
+  ${data.license}
+
   # ${data.title}
 
 UW Code Bootcamp Week 9 HW
@@ -21,8 +23,6 @@ ${data.video}
 
 ![portfolio](./assets/${data.img})
 
-## Installation and Git Repository
-
 Respository: ${data.repo}
 
 Please follow the installation process below:
@@ -32,24 +32,20 @@ ${data.install}
 
 ### Usage
 
-${data.story}
+${data.usage}
 
 
 ### License
+This application is covered under the ${data.license} License
 
-${data.license}
-
-
-## Contributing Guidelines
-
-${data.mockup}
 
 ## Tests
 
-${data.features}
+${data.test}
 
 ## Questions
 
+github.com/${data.username}
 
 `;
 }
