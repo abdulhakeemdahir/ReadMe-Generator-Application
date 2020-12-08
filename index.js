@@ -1,4 +1,4 @@
-const inquirer = require("./assets/node_modules/inquirer");
+const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./assets/utils/generateMarkdown");
 const util = require("util");
