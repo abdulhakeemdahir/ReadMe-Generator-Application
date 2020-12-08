@@ -16,33 +16,33 @@ const questions = () =>
     },
     {
       type: "editor",
-      name: "comment",
-      message: "Developer Comment?",
+      name: "description",
+      message: "Description of your Program?",
     },
     {
       type: "editor",
-      name: "request",
-      message: "Developer Request?",
+      name: "tableofcontents",
+      message: "Table of Contents?",
     },
     {
       type: "editor",
-      name: "story",
-      message: "User Story?",
-    },
-    {
-      type: "editor",
-      name: "criteria",
-      message: "Acceptance Criteria?",
+      name: "install",
+      message: "How to Install Program?",
     },
     {
       type: "input",
-      name: "Mockup",
-      message: "Any Mockup?",
+      name: "repo",
+      message: "Link to your repository?",
     },
     {
       type: "editor",
-      name: "features",
-      message: "Features and Highlights?",
+      name: "usage",
+      message: "How to use your Program?",
+    },
+    {
+      type: "input",
+      name: "license",
+      message: "What is your programs License?",
     },
     {
       type: "input",

@@ -27,20 +27,22 @@ ${data.install}
 Respository: ${data.repo}
 
 
-### Usage
+## Usage
 
 ${data.usage}
 
 
-### License
+## License
 This application is covered under the ${data.license} License
 
+## Contributing
+${data.contribute}
 
 ## Tests
 Below is video test of my working application
 
 ![Video](${data.video})
-${data.test}
+
 
 ## Questions
 
