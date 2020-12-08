@@ -39,7 +39,7 @@ https://github.com/abdulhakeemdahir/ReadMe-Generator-Application
 
 ## Usage
 
-To use the application, you have to install the Inquirer NPM package. Then you run the application by running â€œnode index.jsâ€� in your integrated terminal. Follow the questions prompts and input the correct information. Once youâ€™ve completed the prompts, you will get a notification in the console that shows your readme has been generated. Enjoy your automatically formatted readme.
+To use the application, you have to install the Inquirer NPM package. Then you run the application by running node index.js in your integrated terminal. Follow the questions prompts and input the correct information. Once you’ve completed the prompts, you will get a notification in the console that shows your readme has been generated. Enjoy your automatically formatted readme.
 
 
 
