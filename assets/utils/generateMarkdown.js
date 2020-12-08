@@ -1,6 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+
+  # ${data.title}
 
 UW Code Bootcamp Week 9 HW
 
@@ -21,17 +23,19 @@ UW Code Bootcamp Week 9 HW
 ${data.comment}
 
 ## Employer Request
-
+\`\`\`
 ${data.request}
+\`\`\`
 
 ### User Story
-
+\`\`\`
 ${data.story}
-
+\`\`\
 
 ### Acceptance Criteria
-
+\`\`\`
 ${data.criteria}
+\`\`\`
 
 ## Mockup
 
@@ -43,9 +47,9 @@ The follwing are all of the feautres and highlights of my portfolio:
 
 
 ### JAVASCRIPT
-
+\`\`\`
 ${data.features}
-
+\`\`\`
 ## Live Project Site
 
 ${data.video}
