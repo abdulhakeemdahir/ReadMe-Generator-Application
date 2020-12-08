@@ -16,34 +16,6 @@ ${data.tableofcontents}
 
 
 ## Installation
-\`\`\`
-${data.request}
-\`\`\`
-
-### User Story
-\`\`\`
-${data.story}
-\`\`\
-
-### Acceptance Criteria
-\`\`\`
-${data.criteria}
-\`\`\`
-
-## Mockup
-
-${data.mockup}
-
-## Website Features and Highlights
-
-The follwing are all of the feautres and highlights of my portfolio:
-
-
-### JAVASCRIPT
-\`\`\`
-${data.features}
-\`\`\`
-## Live Project Site
 
 ${data.video}
 
@@ -57,9 +29,28 @@ Please follow the installation process below:
 
 ${data.install}
 
-## License Agreement
+
+### Usage
+
+${data.story}
+
+
+### License
 
 ${data.license}
+
+
+## Contributing Guidelines
+
+${data.mockup}
+
+## Tests
+
+${data.features}
+
+## Questions
+
+
 `;
 }
 
