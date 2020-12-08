@@ -2,15 +2,17 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./assets/utils/generateMarkdown");
 const util = require("util");
+const Choices = require("inquirer/lib/objects/choices");
 const writeToFile = util.promisify(fs.writeFile);
 
 // array of questions for user
 const questions = () =>
   inquirer.prompt([
     {
-      type: "input",
+      type: "list",
       name: "title",
       message: "What is the application name?",
+      choices: ["Choice A", new inquirer.Separator(), "choice B"],
     },
     {
       type: "editor",
