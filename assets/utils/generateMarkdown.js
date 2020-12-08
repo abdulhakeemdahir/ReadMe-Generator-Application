@@ -20,15 +20,11 @@ ${data.tableofcontents}
 
 ## Installation
 
-${data.video}
-
-![portfolio](./assets/${data.img})
-
-Respository: ${data.repo}
-
 Please follow the installation process below:
 
 ${data.install}
+
+Respository: ${data.repo}
 
 
 ### Usage
@@ -41,12 +37,18 @@ This application is covered under the ${data.license} License
 
 
 ## Tests
+Below is video test of my working application
 
+![Video](${data.video})
 ${data.test}
 
 ## Questions
 
+If you have any additional questions, you can reach me at:
+
 github.com/${data.username}
+
+${data.email}
 
 `;
 }
